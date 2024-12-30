@@ -1,0 +1,76 @@
+.category-section {
+    margin-top: 40px; /* Space between Hero and CategorySection */
+    margin-bottom: 60px; /* Space between CategorySection and Latest Collection */
+  }
+  
+  .carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center; /* Center the carousel container */
+    width: 100%;
+  }
+  
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff; /* White color for the arrows */
+    font-size: 20px; /* Size of the arrows */
+    cursor: pointer;
+    z-index: 10;
+    border: none;
+    background-color: #D5006D; /* Dark color background for the circle */
+    border-radius: 50%; /* Makes the arrow button circular */
+    padding: 10px; /* Adds space around the arrow */
+    width: 40px; /* Set width for the circle */
+    height: 40px; /* Set height for the circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left-0 {
+    left: -20px; /* Moves the left arrow outside the container */
+  }
+  
+  .right-0 {
+    right: -20px; /* Moves the right arrow outside the container */
+  }
+  
+  .category-carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    padding-bottom: 10px; /* Ensures the content doesn't get hidden under the arrows */
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 150px; /* Ensures that the category items don't shrink too much */
+  }
+  
+  .category-image-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .category-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .category-name {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; /* Adds space between the image and the name */
+  }
+  
