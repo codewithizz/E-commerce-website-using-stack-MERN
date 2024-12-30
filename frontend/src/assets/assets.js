@@ -225,15 +225,11 @@ import star_icon from './star_icon.png'
 import support_img from './support_img.png'
 import menu_icon from './menu_icon.png'
 import about_img from './about_img.png'
-<<<<<<< HEAD
+
 import contact_img from './contact_img.png'
 import razorpay_logo from './razorpay_logo.png'
 import stripe_logo from './stripe_logo.png'
-=======
-import contact_img from './contact_img.jpg'
-import razorpay_logo from './razorpay_logo.png'
-import upi_logo from './upi_logo.png'
->>>>>>> 7a3663e7552d30f68f9013e5422f8a643d29c399
+
 import cross_icon from './cross_icon.png'
 
 export const assets = {
@@ -263,11 +259,7 @@ export const assets = {
     about_img,
     contact_img,
     razorpay_logo,
-<<<<<<< HEAD
     stripe_logo,
-=======
-    upi_logo,
->>>>>>> 7a3663e7552d30f68f9013e5422f8a643d29c399
     cross_icon
 }
 
