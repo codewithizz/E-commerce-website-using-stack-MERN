@@ -1,1 +1,1 @@
-# E-commerce-website-using-stack---MERN
+# E-commerce website using Stack-MERN
