@@ -62,3 +62,52 @@ This project offers the following capabilities:
    An additional secure payment gateway option for customers, providing flexibility in choosing their preferred payment method.
 
 ---
+## Installation and Setup
+
+Follow these steps to set up and run the project locally:
+
+### Steps To Setup Backend Of The Project
+1. Open the project folder in VS Code.
+2. Open the Integrated Terminal.
+   - Right-click on the `backend` folder > Select **"Open In Integrated Terminal"**.
+3. Run the following command to install dependencies:
+   ```
+   npm install
+   ```
+   Wait for the installation to complete (requires internet).
+4. Start the backend server using:
+   ```
+   npm run server
+   ```
+   Ensure the backend is running before starting the frontend or admin panel.
+
+### Steps To Run Frontend of The Project
+1. Right-click on the `frontend` folder > Select **"Open In Integrated Terminal"**.
+2. Run the following command to install dependencies:
+   ```
+   npm install
+   ```
+   Wait for the installation to complete (requires internet).
+3. Start the frontend using:
+   ```
+   npm run dev
+   ```
+4. Open the provided link (e.g., `http://localhost:5173`) in your browser.
+
+### Steps To Run Admin Panel of The Project
+1. Right-click on the `admin` folder > Select **"Open In Integrated Terminal"**.
+2. Run the following command to install dependencies:
+   ```
+   npm install
+   ```
+   Wait for the installation to complete (requires internet).
+3. Start the admin panel using:
+   ```
+   npm run dev
+   ```
+4. Open the provided link (e.g., `http://localhost:5174`) in your browser.
+
+---
+## Author
+**Isha Sonawane**  
+#codewithizz
