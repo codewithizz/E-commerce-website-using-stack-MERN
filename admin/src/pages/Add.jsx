@@ -13,22 +13,12 @@ const Add = ({ token }) => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [price, setPrice] = useState('');
-  const [originalPrice, setOriginalPrice] = useState(''); // New state for original price
   const [category, setCategory] = useState('Men');
   const [subCategory, setSubCategory] = useState('Topwear');
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
 
-  const calculateSavings = () => {
-    if (originalPrice && price && originalPrice > price) {
-      const savings = originalPrice - price;
-      const discount = ((savings / originalPrice) * 100).toFixed(2);
-      return { savings, discount };
-    }
-    return { savings: 0, discount: 0 };
-  };
 
-  const { savings, discount } = calculateSavings();
 
   const onSubmitHandler = async (e) => {
     e.preventDefault();
@@ -38,8 +28,7 @@ const Add = ({ token }) => {
 
       formData.append('name', name);
       formData.append('description', description);
-      formData.append('price', price);
-      formData.append('originalPrice', originalPrice); // Include original price
+      formData.append('price', price); 
       formData.append('category', category);
       formData.append('subCategory', subCategory);
       formData.append('bestseller', bestseller);
@@ -65,7 +54,7 @@ const Add = ({ token }) => {
         setImage3(false);
         setImage4(false);
         setPrice('');
-        setOriginalPrice('');
+    
       } else {
         toast.error(response.data.message);
       }
@@ -164,25 +153,10 @@ const Add = ({ token }) => {
           />
         </div>
 
-        <div>
-          <p className="mb-2 text-[#d5006d]">Original Price</p>
-          <input
-            onChange={(e) => setOriginalPrice(e.target.value)}
-            value={originalPrice}
-            className="w-full px-3 py-2 sm:w-[120px] border-2 border-[#d5006d]"
-            type="number"
-            placeholder="50"
-          />
-        </div>
+        
       </div>
 
-      {/* Display Discount and Savings */}
-      {savings > 0 && (
-        <div className="text-green-600">
-          <p>You save ₹{savings} ({discount}%)</p>
-        </div>
-      )}
-
+      
       {/* Sizes */}
       <div>
         <p className="mb-2 text-[#d5006d]">Product Sizes</p>
