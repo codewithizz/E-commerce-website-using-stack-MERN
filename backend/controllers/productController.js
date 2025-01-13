@@ -26,7 +26,6 @@ const addProduct = async (req, res) => {
             description,
             category,
             price: Number(price),
-            originalPrice: Number(originalPrice),
             subCategory,
             bestseller: bestseller === "true" ? true : false,
             sizes: JSON.parse(sizes),
