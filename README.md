@@ -1,7 +1,8 @@
 # IzzyVogue - Modern Full-Stack eCommerce Platform
 
 IzzyVogue is a comprehensive and modern eCommerce platform designed to deliver a seamless shopping experience for users and robust management tools for admins. With features like product browsing, secure payments, and admin controls, IzzyVogue combines functionality and design for a superior online shopping experience.
-✨ **Check out the live version of IzzyVogue hosted on Vercel:**  
+<br>  
+**Check out the live version of IzzyVogue hosted on Vercel:**  
 [IzzyVogue Live](https://izzyvogue-e-commerce-website-frontend.vercel.app)
 
 ---
